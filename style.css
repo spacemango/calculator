@@ -67,14 +67,14 @@ body {
 button {
    margin: 1px;
    padding: 20px 25px;
-   background-color: var(--button);
    border: 0;
    border-radius: 2px;
+   background-color: var(--button);
    font-family: 'Roboto', sans-serif;
    font-size: 24px;
 }
 
-button:hover {
+button:not(:last-child):hover {
    background-color: white;
    opacity: 0.75 !important;
 }
@@ -127,6 +127,12 @@ button:hover {
 
 #btn-equals {
    background-color: var(--equals);
+   opacity: 0.75;
+}
+
+#btn-equals:hover {
+   background-color: var(--equals);
+   opacity: 1;
 }
 
 #btn-reset,
