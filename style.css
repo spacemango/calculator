@@ -17,10 +17,13 @@
 }
 
 body {
+   margin: 0;
+   height: 100vh;
    background-color: var(--background-color);
    display: flex;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
    font-family: 'Roboto', sans-serif;
    color: var(--text);
 }
@@ -30,6 +33,7 @@ body {
    padding: 10px 7px 20px 7px;
    border-radius: 5px;
    background-color: var(--calculator);
+   justify-self: center;
    text-align: center;
    display: grid;
    font-size: 24px;
@@ -147,7 +151,7 @@ button:not(:last-child):hover {
 }
 
 a {
-   color: var(--button);
+   color: var(--calculator);
    text-decoration: none;
    font-weight: 100;
 }
